@@ -9,11 +9,11 @@
 		$client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', array('encoding' => 'UTF-8')); 
 		
 		$result = $client->PaymentVerification(
-												array(
-														'MerchantID'	 => $MerchantID,
-														'Authority' 	 => $Authority,
-														'Amount'	 	 => $Amount
-													)
+						  	array(
+									'MerchantID'	 => $MerchantID,
+									'Authority' 	 => $Authority,
+									'Amount'	 => $Amount
+								)
 		);
 
 		echo $result->Status;  // Status of payment
