@@ -14,10 +14,10 @@
 	$result = $client->PaymentRequest(
 						array(
 								'MerchantID' 	=> $MerchantID,
-								'Amount' 		=> $Amount,
+								'Amount' 	=> $Amount,
 								'Description' 	=> $Description,
-								'Email' 		=> $Email,
-								'Mobile' 		=> $Mobile,
+								'Email' 	=> $Email,
+								'Mobile' 	=> $Mobile,
 								'CallbackURL' 	=> $CallbackURL
 							)
 	);
