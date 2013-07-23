@@ -12,14 +12,14 @@
 	$client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', array('encoding' => 'UTF-8')); 
 	
 	$result = $client->PaymentRequest(
-										array(
-												'MerchantID' 	=> $MerchantID,
-												'Amount' 		=> $Amount,
-												'Description' 	=> $Description,
-												'Email' 		=> $Email,
-												'Mobile' 		=> $Mobile,
-												'CallbackURL' 	=> $CallbackURL
-											)
+						array(
+								'MerchantID' 	=> $MerchantID,
+								'Amount' 		=> $Amount,
+								'Description' 	=> $Description,
+								'Email' 		=> $Email,
+								'Mobile' 		=> $Mobile,
+								'CallbackURL' 	=> $CallbackURL
+							)
 	);
 	
 	//Redirect to URL You can do it also by creating a form
