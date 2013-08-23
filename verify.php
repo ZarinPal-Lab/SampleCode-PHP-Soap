@@ -15,9 +15,13 @@
 									'Amount'	 => $Amount
 								)
 		);
+		
+		if($result->Status == 100){
+			echo 'Transation success. RefID:'. $result->RefID;
+		} else {
+			echo 'Transation failed. Status:'. $result->Status;
+		}
 
-		echo $result->Status;  // Status of payment
-		echo $result->RefID; // RefID of Payment 
 	} else {
 		echo 'Transaction canceled by user';
 	}
