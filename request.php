@@ -16,7 +16,7 @@
         'Description'    => $Description,
         'Email'          => $Email,
         'Mobile'         => $Mobile,
-        'CallbackURL'    => $CallbackURL
+        'CallbackURL'    => $CallbackURL,
     ]);
 
     //Redirect to URL You can do it also by creating a form
