@@ -5,8 +5,8 @@
     $Authority = $_GET['Authority'];
 
     if ($_GET['Status'] == 'OK') {
-        // URL also Can be https://ir.zarinpal.com/pg/services/WebGate/wsdl
-        $client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
+        // URL also can be ir.zarinpal.com or de.zarinpal.com
+        $client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
 
         $result = $client->PaymentVerification([
             'MerchantID'     => $MerchantID,

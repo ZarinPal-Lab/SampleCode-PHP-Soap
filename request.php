@@ -7,8 +7,8 @@
     $Mobile = '09123456789'; // Optional
     $CallbackURL = 'http://www.m0b.ir/verify.php';  // Required
 
-    // URL also Can be https://ir.zarinpal.com/pg/services/WebGate/wsdl
-    $client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
+    // URL also can be ir.zarinpal.com or de.zarinpal.com
+    $client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
 
     $result = $client->PaymentRequest([
         'MerchantID'     => $MerchantID,
