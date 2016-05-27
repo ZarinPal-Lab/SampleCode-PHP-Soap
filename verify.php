@@ -11,7 +11,7 @@
         $result = $client->PaymentVerification([
             'MerchantID'     => $MerchantID,
             'Authority'      => $Authority,
-            'Amount'         => $Amount
+            'Amount'         => $Amount,
         ]);
 
         if ($result->Status == 100) {
