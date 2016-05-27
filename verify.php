@@ -8,13 +8,11 @@
         // URL also Can be https://ir.zarinpal.com/pg/services/WebGate/wsdl
         $client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
 
-        $result = $client->PaymentVerification(
-                            [
-                                    'MerchantID'     => $MerchantID,
-                                    'Authority'      => $Authority,
-                                    'Amount'         => $Amount,
-                                ]
-        );
+        $result = $client->PaymentVerification([
+            'MerchantID'     => $MerchantID,
+            'Authority'      => $Authority,
+            'Amount'         => $Amount
+        ]);
 
         if ($result->Status == 100) {
             echo 'Transation success. RefID:'.$result->RefID;
